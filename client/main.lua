@@ -19,7 +19,7 @@ AddEventHandler('cb-medloot:client:loot', function(coords)
     local ped = PlayerPedId()
     local armIndex = GetPedDrawableVariation(PlayerPedId(), 1)
     local alertData = {
-        title = "10-33 | Theft from Hospital",
+        title = "Police Alert | Theft from Hospital",
         coords = coords,
     }
 
