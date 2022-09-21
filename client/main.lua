@@ -44,9 +44,7 @@ AddEventHandler('cb-medloot:client:loot', function(coords)
         Wait(5000)
         ClearPedTasks(ped)
         FreezeEntityPosition(ped, false)
-        itemToGive = Config.RewardItems[math.random(1, #Config.RewardItems)]
-        TriggerServerEvent('cb-medloot:server:RewardItem', itemToGive.item)
-        QBCore.Functions.Notify('You Found ' .. itemToGive.label .. '!', 'success', 5000)
+        TriggerServerEvent('cb-medloot:server:RewardItem')
     else
         QBCore.Functions.Notify('You Already Looted Recently, Wait ' .. GlobalTimer .. ' Seconds Before You Try Again', 'error', 5000)
     end
