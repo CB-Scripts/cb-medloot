@@ -8,8 +8,8 @@ Due to this script using qb-target, you must insert the following lines in qb-ta
             models = {
                 "v_med_trolley",
                 "v_med_trolley2",
-				"prop_medstation_01",
-				"v_med_cor_cemtrolly"
+		"prop_medstation_01",
+		"v_med_cor_cemtrolly"
             },
             options = {
                 {
