@@ -51,6 +51,17 @@ AddEventHandler('cb-medloot:client:loot', function(coords)
 end)
 
 CreateThread(function()
+    exports['qb-target']:AddTargetModel(Config.Models, {
+        options = {
+            {
+                type = "client",
+                event = "cb-medloot:client:loot",
+                icon = "fas fa-toolbox",
+                label = "Search",
+            },
+        },
+        distance = 1.5
+    })
     while true do
         if GlobalTimer ~= 0 and GlobalTimer > -1 and firstComplete then
             Wait(900)
