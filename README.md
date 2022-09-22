@@ -2,8 +2,6 @@ cb-medloot
 
 A script that allows players to search containers within hospitals and medical areas for medical items.
 
-Due to this script using qb-target, you must insert the following lines in qb-target/init.lua, under Config.TargetModels.
-
 		["looting"] = {
             models = {
                 "v_med_trolley",
