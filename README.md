@@ -21,6 +21,7 @@ A script that allows players to search containers within hospitals and medical a
         },
 
 You can also add more areas to search under "models" in the above code.
+Add any of your items you want to reward players with under "rewards" in config.lua.
 
 This is my first script so please let me know of any feedback and changes you would like to see.
 
